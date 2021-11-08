@@ -11,7 +11,7 @@ import android.widget.FrameLayout;
 
 import com.google.android.material.tabs.TabLayout;
 
-public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSelectedListener {
+public class MainActivity extends AppCompatActivity {
 
     TabLayout tabLayout;
     FrameLayout frameLayout;
@@ -95,20 +95,5 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
         ft.replace(R.id.layoutContainer, fragment);
         ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
         ft.commit();
-    }
-
-    @Override
-    public void onTabSelected(TabLayout.Tab tab) {
-
-    }
-
-    @Override
-    public void onTabUnselected(TabLayout.Tab tab) {
-
-    }
-
-    @Override
-    public void onTabReselected(TabLayout.Tab tab) {
-
     }
 }
