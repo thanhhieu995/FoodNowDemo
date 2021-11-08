@@ -75,9 +75,8 @@ public class MainActivity extends AppCompatActivity {
 
             }
         };
-//        tabLayout.setOnTabSelectedListener(listener);
+        tabLayout.setOnTabSelectedListener(listener);
 
-        tabLayout.setOnTabSelectedListener(this);
 
         homeFragment = new HomeFragment();
         orderFragment = new OrderFragment();
