@@ -57,6 +57,7 @@
         android:layout_marginBottom="249dp"
         android:ems="10"
         android:inputType="textEmailAddress"
+        android:text="qwwert"
         app:layout_constraintBottom_toTopOf="@+id/imgDown"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -67,6 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:ems="10"
+        android:text="1234"
         android:inputType="numberPassword"
         app:layout_constraintEnd_toEndOf="@+id/txtEmail"
         app:layout_constraintStart_toStartOf="@+id/txtEmail"
