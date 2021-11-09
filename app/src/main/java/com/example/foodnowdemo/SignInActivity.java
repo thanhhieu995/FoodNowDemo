@@ -36,7 +36,7 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
                 if (TextUtils.isEmpty(txtEmail.getText()) || txtPassword.getText().toString().equals("")) {
                     Toast.makeText(SignInActivity.this, "you have to enter your name and password", Toast.LENGTH_SHORT).show();
                 } else {
-                    Intent intent = new Intent(SignInActivity.this, ActivityFood.class);
+                    Intent intent = new Intent(SignInActivity.this, MainActivity.class);
                     startActivity(intent);
                 }
             }
