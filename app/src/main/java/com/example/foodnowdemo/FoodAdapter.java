@@ -37,7 +37,7 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         final Food food = foods.get(position);
-        holder.txtItemName.setText(food.name + food.name + food.name + food.name + food.name + food.name + food.name);
+        holder.txtItemName.setText(food.name);
         holder.txtPrice.setText(String.valueOf(food.price));
         holder.imgLogo.setImageResource(food.image);
         holder.itemView.setOnClickListener(new View.OnClickListener() {

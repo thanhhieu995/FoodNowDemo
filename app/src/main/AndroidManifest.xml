@@ -15,7 +15,7 @@
 
         </activity>
         <activity
-            android:name=".ActivityFood"
+            android:name=".FoodActivity"
             android:exported="true">
 
         </activity>

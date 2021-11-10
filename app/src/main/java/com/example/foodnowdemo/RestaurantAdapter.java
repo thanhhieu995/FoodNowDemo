@@ -1,6 +1,5 @@
 package com.example.foodnowdemo;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -45,7 +44,9 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Vi
             @Override
             public void onClick(View v) {
                 Toast.makeText(context, restaurant.name, Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(context, ActivityFood.class);
+                Intent intent = new Intent(context, FoodActivity.class);
+                intent.putExtra("name", restaurant.name);
+                intent.putExtra("restaurant", restaurant);
                 context.startActivity(intent);
             }
         });

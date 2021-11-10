@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class ActivityFood extends AppCompatActivity implements AdapterView.OnItemClickListener {
+public class FoodActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     TextView txtName, txtAddress, txtOpenHours;
     ImageView imgCover;
@@ -32,6 +32,16 @@ public class ActivityFood extends AppCompatActivity implements AdapterView.OnIte
         foodAdapter = new FoodAdapter(foods, this);
         rvFoods.setAdapter(foodAdapter);
         rvFoods.setLayoutManager(new LinearLayoutManager(this));
+
+        Bundle extras = getIntent().getExtras();
+        String value = extras.getString("name");
+        txtName = findViewById(R.id.txtName);
+        txtAddress = findViewById(R.id.txtAddress);
+//        txtName.setText(value);
+
+        Restaurant restaurant = (Restaurant) extras.getSerializable("restaurant");
+        txtName.setText(restaurant.name);
+        txtAddress.setText(restaurant.address);
     }
 
 
