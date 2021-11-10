@@ -27,11 +27,6 @@ public class FoodActivity extends AppCompatActivity implements AdapterView.OnIte
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food);
 
-        foods = Food.getMockData();
-        rvFoods = findViewById(R.id.rvListFood);
-        foodAdapter = new FoodAdapter(foods, this);
-        rvFoods.setAdapter(foodAdapter);
-        rvFoods.setLayoutManager(new LinearLayoutManager(this));
 
         Bundle extras = getIntent().getExtras();
         String value = extras.getString("name");
@@ -42,6 +37,17 @@ public class FoodActivity extends AppCompatActivity implements AdapterView.OnIte
         Restaurant restaurant = (Restaurant) extras.getSerializable("restaurant");
         txtName.setText(restaurant.name);
         txtAddress.setText(restaurant.address);
+
+        switch (restaurant.name) {
+            case "Hệ thống Nhà hàng Phố 79":
+                foods = Food.getFood1Data();
+            default:
+                foods = Food.getMockData();
+        }
+        rvFoods = findViewById(R.id.rvListFood);
+        foodAdapter = new FoodAdapter(foods, this);
+        rvFoods.setAdapter(foodAdapter);
+        rvFoods.setLayoutManager(new LinearLayoutManager(this));
     }
 
 
