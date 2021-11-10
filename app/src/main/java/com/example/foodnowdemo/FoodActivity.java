@@ -38,12 +38,12 @@ public class FoodActivity extends AppCompatActivity implements AdapterView.OnIte
         txtName.setText(restaurant.name);
         txtAddress.setText(restaurant.address);
 
-        switch (restaurant.name) {
-            case "Hệ thống Nhà hàng Phố 79":
-                foods = Food.getFood1Data();
-            default:
-                foods = Food.getMockData();
+        if ("Hệ thống Nhà hàng Phố 79".equals(restaurant.name)) {
+            foods = Food.getFood1Data();
+        } else {
+            foods = Food.getMockData();
         }
+
         rvFoods = findViewById(R.id.rvListFood);
         foodAdapter = new FoodAdapter(foods, this);
         rvFoods.setAdapter(foodAdapter);

@@ -53,5 +53,4 @@ public class Restaurant implements Serializable {
         }
         return restaurants;
     }
-
 }
