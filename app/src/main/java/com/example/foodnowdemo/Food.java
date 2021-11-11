@@ -38,5 +38,53 @@ public class Food {
         }
         return foods;
     }
+
+    public static ArrayList<Food> getFood2Data() {
+        String[] names = {"Gà lên mâm", "Gỏi bò An Nam",
+        "Bún thịt nướng tứ quý", "Gỏi bồn tôm thịt", "Tốp mỡ chan xả",
+         "Gân bò bóp chua", "Combo khai vị 2", "Trứng non sốt samba",
+        "Bún diếp bò", "Lẩu riêu Hàu", "Bạch tuột sốt samba", "Bún chả cá tam hoa",
+        "Gân bò um tiêu", "Bún tôm yum", "Cá hồi sốt chanh dây", "An nam lục vị",
+        "Cá tuyết nướng muối ớt", "Tôm sốt gừng", "Hến xào xúc bánh tráng",
+        "Bánh tráng đập", "Chả ram tôm đất", "Bán ướt cuốn thịt nướng", "Bánh tét chiên dưa món",
+        "Tré chua trộn", "Nem lụi thịt nướng", "Chả giò tôm", "Cải thìa xào tỏi",
+        "Đậu hủ chiên giòn", "Bánh ướt thịt heo quay", "Bánh mì chiên tôm thịt",
+        "Chả bò", "Bò nướng xả cây", "Chả mỡ", "Gỏi vả", "Rau muống xào tỏi",
+        "Gỏi xoài tôm khô trững bách thảo", "Chả cá ôm măng", "Chả cá Lã Vọng",
+        "Gà nướng chum", "Cơm chiên hải sản", "Miến xào cua", "Mực cơm chiên mắm",
+        "Cơm chiên xanh", "Bánh tráng thịt heo Đà Nẵng", "Heo nướng cơm lam",
+        "Ếch chiên bơ", "Sườn chìa nướng kim chi", "Lươn bằm xúc bánh đa", "Miến trộn tôm cay",
+        "Chả đùm", "Cơm chiên trái dừa", "Cari tôm", "Cá lóc nướng lá chuối",
+        "Tôm sú xóc tỏi", "Chả cua ôm măng", "Tôm sú sốt bơ tỏi", "Mực cơm hấp",
+        "Tôm đất băm", "Lươn nướng cay", "TomYum", "Gỏi nấm gà", "Cá lóc chiên xù",
+        "Bò nhúng ớt", "Lẩu cá thác lác", "Lẩu thái", "Lẩu hồng sa"};
+        int[] images = {R.drawable.anqgalenmam, R.drawable.anqgoibopthitbo, R.drawable.anqbunthitnuongtuquy,
+                R.drawable.anqgoibontomthit, R.drawable.anqtopmochanhxa, R.drawable.anqganbobopchua,
+                R.drawable.anqcombokhaivi2, R.drawable.anqtrungnonsotsamba, R.drawable.anqbundiepbo,
+                R.drawable.anqlaurieuhau, R.drawable.anqbachtuotsotsamba, R.drawable.anqbunchacatamhoa,
+                R.drawable.anqganboumtieu, R.drawable.anqbuntomyum, R.drawable.anqcahoisotchanhday,
+                R.drawable.anqannamlucvi, R.drawable.anqcatuyetnuongmuoiot, R.drawable.anqtomsotgung,
+                R.drawable.anqhenxaoxucbanhtrang, R.drawable.anqbanhtrangdap, R.drawable.anqcharamtomdat,
+                R.drawable.anqbanhuotcuonthitnuong, R.drawable.anqbanhtetchienduamon, R.drawable.anqtrechuatron,
+                R.drawable.anqnemluithitnuong, R.drawable.anqchagiotom, R.drawable.anqcaithiaxaotoi, R.drawable.anqdauhuuchiengion,
+                R.drawable.anqbanhuotthitheoquay, R.drawable.anqbanhmichientomthit, R.drawable.anqchabo, R.drawable.anqbonuongxacay,
+                R.drawable.anqchamo, R.drawable.anqgoiva, R.drawable.anqraumuongxaotoi, R.drawable.anqgoixaotomkhotrungbachthao,
+                R.drawable.anqchacaommang, R.drawable.anqchacalavong, R.drawable.anqganuongchum, R.drawable.anqcomchienhaisan,
+                R.drawable.anqmienxaocua, R.drawable.anqmuccomchiennuocmam, R.drawable.anqcomchienxanh, R.drawable.anqbanhtrangthitheodanang,
+                R.drawable.anqheonuongcomlam, R.drawable.anqechchienbo, R.drawable.anqsuonchianuongkimchi, R.drawable.anqluongbamxucbanhda,
+                R.drawable.anqmientrontomcay, R.drawable.anqchadum, R.drawable.anqcomchientraidua, R.drawable.anqcaritom,
+                R.drawable.anqcalocnuonglachuoi, R.drawable.anqtomsuxoctoi, R.drawable.anqchacuaommang, R.drawable.anqtomsusotbotoi,
+                R.drawable.anqmuccomhap, R.drawable.anqtomdatbam, R.drawable.anqluongnuongcay, R.drawable.anqtomyum,
+                R.drawable.anqgoinamga, R.drawable.anqcalocchienxu, R.drawable.anqbonhungot, R.drawable.anqlaucathaclac,
+                R.drawable.anqlauthai, R.drawable.anqlauhongsa};
+        int[] prices = {381, 120, 59, 99, 105, 159, 108, 105, 86, 333, 149, 59, 159, 65, 295, 169, 220, 195, 85, 39, 86,
+         111, 129, 85, 97, 189, 99, 55, 49, 159, 75, 105, 174, 105, 80, 45, 95, 135, 280, 369, 119, 135, 165, 99, 233, 175, 125,
+        195, 165, 155, 155, 149, 195, 159, 196, 165, 196, 165, 145, 150, 207, 260, 118, 165, 199, 285, 269};
+        ArrayList<Food> foods = new ArrayList<>();
+        for (int i = 0; i < names.length; i++) {
+            foods.add(new Food(names[i], images[i], prices[i]));
+        }
+        return foods;
+    }
 }
 
