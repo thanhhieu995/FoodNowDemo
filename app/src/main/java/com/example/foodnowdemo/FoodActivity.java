@@ -40,7 +40,12 @@ public class FoodActivity extends AppCompatActivity implements AdapterView.OnIte
 
         if ("Hệ thống Nhà hàng Phố 79".equals(restaurant.name)) {
             foods = Food.getFood1Data();
-        } else {
+        } else if ("Chuỗi Ân Nam Quán".equals(restaurant.name)) {
+            foods = Food.getFood2Data();
+        } else if ("Nhà hàng Sườn Nướng Hàn Quốc".equals(restaurant.name)) {
+            foods = Food.getFood3Data();
+        } else
+            {
             foods = Food.getMockData();
         }
 

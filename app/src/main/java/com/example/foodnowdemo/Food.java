@@ -86,5 +86,19 @@ public class Food {
         }
         return foods;
     }
+
+    public static ArrayList<Food> getFood3Data() {
+        String[] names = {"Lẩu hải sản Hàn Quốc", "Canh kim chi", "Bánh xèo hải sản Hàn Quốc", "Cơm cuốn lá kim",
+        "súp tương đậu", "Sườn nướng Hàn Quốc", "Bò xào nấm", "Thịt ba chỉ nướng", "kimbap", "Tokbokki"};
+        int[] images = {R.drawable.bbqlauhaisanhanquoc, R.drawable.bbqcanhkimchi, R.drawable.bbqbanhxeohaisanhanquoc,
+        R.drawable.bbqcomcuonlakim, R.drawable.bbqsuptuongdau, R.drawable.bbqsuongnuonghanquoc, R.drawable.bbqbaoxaonam,
+        R.drawable.bbqthitbachinuong, R.drawable.bbqkimbap, R.drawable.bbqtokbokki};
+        int[] prices = {250, 59, 49, 39, 67, 99, 79, 109, 49, 111};
+        ArrayList<Food> foods = new ArrayList<>();
+        for (int i = 0; i < names.length; i++) {
+            foods.add(new Food(names[i], images[i], prices[i]));
+        }
+        return foods;
+    }
 }
 

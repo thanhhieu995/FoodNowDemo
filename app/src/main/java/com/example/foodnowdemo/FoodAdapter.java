@@ -44,7 +44,7 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> {
             @Override
             public void onClick(View v) {
                //mListener.onFoodItemClick(food);
-                Toast.makeText(context, ">>>>", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, food.name, Toast.LENGTH_SHORT).show();
             }
         });
     }
